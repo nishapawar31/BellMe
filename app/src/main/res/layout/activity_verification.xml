@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.VerificationActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="364dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:text="Verification"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="251dp"
+            android:layout_height="154dp"
+            android:layout_gravity="center"
+            android:src="@drawable/verification" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="Enter the verification code(OTP) we just sent you on your mobile number !"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/layout"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ems="10"
+            android:maxLength="1"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ems="10"
+            android:maxLength="1"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ems="10"
+            android:maxLength="1"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editText8"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ems="10"
+            android:maxLength="1"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:layout_below="@+id/main"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:text="Verification code is valid for 24 hours\n If you didn't received a code, Resend it."
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_below="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editTextText"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/rectanglestyle"
+            android:padding="12dp"
+            android:text="BACK"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rectanglestyle"
+            android:backgroundTint="#325288"
+            android:layout_below="@+id/editTextText2"
+            android:layout_marginLeft="30dp"
+            android:padding="12dp"
+            android:text="VERIFY"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textAlignment="center">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
