@@ -13,8 +13,20 @@
         android:theme="@style/Theme.BellMe"
         tools:targetApi="31">
         <activity
+            android:name=".Activities.FlashActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Activities.PhoneLogin"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Activities.SignInActivity"
+            android:exported="false">
+        </activity>
+        <activity
             android:name=".Activities.ToDo_reminder"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,22 +35,8 @@
         </activity>
         <activity
             android:name=".Activities.VerificationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activities.LogInActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activities.SignInActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activities.FlashActivity"
-            android:exported="true">
-
+            android:exported="false">
         </activity>
-
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true" />
     </application>
 
 </manifest>

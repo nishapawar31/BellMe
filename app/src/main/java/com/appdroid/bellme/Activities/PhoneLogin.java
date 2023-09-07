@@ -10,20 +10,20 @@ import android.widget.TextView;
 
 import com.appdroid.bellme.R;
 
-public class LogInActivity extends AppCompatActivity {
+public class PhoneLogin extends AppCompatActivity {
     TextView Next;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_log_in);
+        setContentView(R.layout.activity_phone_login);
 
         Next = findViewById(R.id.Next);
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LogInActivity.this, VerificationActivity.class);
+                Intent intent = new Intent(PhoneLogin.this, VerificationActivity.class);
                 startActivity(intent);
             }
         });
