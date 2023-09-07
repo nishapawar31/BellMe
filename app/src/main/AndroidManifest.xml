@@ -13,14 +13,32 @@
         android:theme="@style/Theme.BellMe"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
-            android:exported="true">
+            android:name=".Activities.ToDo_reminder"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Activities.VerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.FlashActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

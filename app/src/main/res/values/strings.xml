@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BellMe</string>
+    <string name="text">By signing in you agree to our Terms of use\n and Privacy policy</string>
 </resources>
