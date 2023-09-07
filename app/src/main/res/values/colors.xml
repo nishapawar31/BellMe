@@ -2,4 +2,22 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="offwhite">#FBFBFB</color>
+
+    <color name="darkblue"> #325288</color>
+
+    <color name="blueicons"> #C9DFFF</color>
+
+    <color name="whiteicons">#F6F6F6</color>
+
+    <color name="blacktext"> #444444</color>
+
+    <color name="skyblue">#08D1F1</color>
+
+    <color name="skyblueish">#D754C1D3</color>
+    <color name="pink"> #FFA7DE</color>
+
+    <color name="green">#A1CF02</color>
+
+    <color name="orangebutton"> #FF8000</color>
 </resources>
