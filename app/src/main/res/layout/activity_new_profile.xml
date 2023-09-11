@@ -4,46 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Profile">
+    tools:context=".NewProfileActivity">
 
-    <Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:background="@color/white">
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="?android:actionBarSize">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/backBTN"
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:gravity="center"
-                android:src="@drawable/back" />
-
-            <TextView
-                android:layout_width="261dp"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:text="My profile"
-                android:textSize="20sp"
-                android:textColor="@color/blacktext"
-                android:textAlignment="center">
+                android:orientation="horizontal"
+                android:layout_marginEnd="20dp">
 
-            </TextView>
+                <ImageView
+                    android:id="@+id/backBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:src="@drawable/back" />
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="261dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/profile"
+                    android:textSize="20sp"
+                    android:textColor="@color/blacktext"
+                    android:textAlignment="center">
+                </TextView>
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:backgroundTint="@color/darkblue"
+                    android:text="Edit"
+                    android:textColor="@color/white">
+                </Button>
+
+            </LinearLayout>
 
         </RelativeLayout>
 
-    </Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -68,14 +77,17 @@
                 android:src="@drawable/accid"
                 android:layout_marginTop="5dp">
             </ImageView>
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/f_name"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:hint="Nisha Pawar"
+                android:hint="@string/first_name"
                 android:backgroundTint="#F2414345"
                 android:textColorHint="@color/blacktext">
 
-            </EditText>
+            </com.google.android.material.textfield.TextInputEditText>
+
+
         </LinearLayout>
 
         <LinearLayout
@@ -87,17 +99,18 @@
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="40dp"
-                android:src="@drawable/call"
+                android:src="@drawable/accid"
                 android:layout_marginTop="5dp">
             </ImageView>
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/l_name"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:hint="+91 2356472891"
+                android:hint="@string/last_name"
                 android:backgroundTint="#F2414345"
                 android:textColorHint="@color/blacktext">
 
-            </EditText>
+            </com.google.android.material.textfield.TextInputEditText>
         </LinearLayout>
 
         <LinearLayout
@@ -112,27 +125,26 @@
                 android:src="@drawable/email"
                 android:layout_marginTop="5dp">
             </ImageView>
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/n_email"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:hint="No Email Attached"
+                android:hint="@string/email"
                 android:backgroundTint="#F2414345"
                 android:textColorHint="@color/blacktext">
-            </EditText>
+            </com.google.android.material.textfield.TextInputEditText>
         </LinearLayout>
 
         <TextView
             android:id="@+id/logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Logout"
+            android:text="@string/logout"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
             android:textSize="20sp"
             android:textColor="@color/orangebutton">
-
         </TextView>
     </LinearLayout>
-
 
 </RelativeLayout>
